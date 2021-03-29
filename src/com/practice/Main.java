@@ -3,22 +3,24 @@ package com.practice;
 // Prints the object names
 
 /*TASKS
-* 1. Polish semantics
-* 2. ?Modify for loop
-* 3. Rename class to HASHMAP presidents*/
+ * 1. Polish semantics +
+ * 2. ?Modify for loop +
+ * 3. Rename class to HASHMAP presidents +
+ * 4. ?Print the field name and the class members in another way +
+ * */
 public class Main {
 
-    static HashM_pplCharacteristics presidents = new HashM_pplCharacteristics();
-    static HashM_pplCharacteristics europePresidents = new HashM_pplCharacteristics();
-    static HashM_pplCharacteristics test = new HashM_pplCharacteristics();
+    static HashMapPresidents presidents = new HashMapPresidents();
+    static HashMapPresidents europePresidents = new HashMapPresidents();
+    static HashMapPresidents test = new HashMapPresidents();
 
 
     public static void main(String[] args) {
         presidents.put("Biden", "Liberal");
-        System.out.println(presidents.put("Biden", "US"));
-        System.out.println(presidents.put("Biden", "Liberal"));
+        presidents.put("Biden", "US");
+        presidents.put("Biden", "Liberal");
 
-        System.out.println(europePresidents.put("Andrzej Duda", "Poland"));
+        europePresidents.put("Andrzej Duda", "Poland");
 
         test.put("Kim Jin Ung", "NK");
 
