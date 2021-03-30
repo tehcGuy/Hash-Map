@@ -2,6 +2,8 @@ package com.practice;
 // Add the unique keys into the HashMap, and throw the message if the key already exists
 // Prints the object names
 
+import java.util.*;
+
 /*TASKS
  * 1. Polish semantics +
  * 2. ?Modify for loop +
@@ -16,6 +18,15 @@ public class Main {
 
 
     public static void main(String[] args) {
+        Map<Integer, String> test2 = new HashMap<>();
+
+        System.out.println(test2.put(1,"Apple")); //null means it is unique value
+        System.out.println(test2.put(2,"Banana"));
+        System.out.println(test2.put(1, "Orange")); //value means it was overwritten
+
+        System.out.println(test2);
+
+        /////////////////////////////////////////////////////////////////////////////
         presidents.put("Biden", "Liberal");
         presidents.put("Biden", "US");
         presidents.put("Biden", "Liberal");

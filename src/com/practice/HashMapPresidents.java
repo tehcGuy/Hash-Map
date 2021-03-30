@@ -11,11 +11,11 @@ public class HashMapPresidents extends HashMap<String, String> {
 
     public HashMapPresidents() {
         this.peopleCharacteristics = new HashMap<>();
-        givesInstancePosition();
+        this.givesInstancePosition();
     }
 
     public Map<String, String> getPeopleCharacteristics() {
-        System.out.println(getTheInstanceName());
+        System.out.println(this.getTheInstanceName());
         return peopleCharacteristics;
     }
 
